@@ -28,7 +28,7 @@ jobs:
           git config --global user.name "${GIT_CONFIG_USER_NAME}"
       - name: install pinentry
         run: |
-          apt-get install pinentry
+          sudo apt-get install pinentry
       - name: release maven artifact
         run: |
           ./mvnw -Dstyle.color=always -s ./.mvn/settings.xml release:prepare release:perform -B -DskipTests=true -Djava.security.egd=file:/dev/./urandom -DscmCommentPrefix="[mvn-release] "
