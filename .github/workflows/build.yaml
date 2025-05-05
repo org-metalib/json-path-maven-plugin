@@ -29,9 +29,9 @@ jobs:
       - name: install pinentry
         run: |
           /usr/bin/pinentry
-          export GPG_TTY=$(tty)
-          gpg-connect-agent updatestartuptty /bye >/dev/null
-          sudo apt-get install pinentry
+          #export GPG_TTY=$(tty)
+          #gpg-connect-agent updatestartuptty /bye >/dev/null
+          #sudo apt-get install pinentry
       - name: release maven artifact
         run: |
           ./mvnw -Dstyle.color=always -s ./.mvn/settings.xml release:prepare release:perform -B -DskipTests=true -Djava.security.egd=file:/dev/./urandom -DscmCommentPrefix="[mvn-release] "
