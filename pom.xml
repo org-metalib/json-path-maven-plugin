@@ -10,7 +10,7 @@
 
     <groupId>org.metalib.maven.plugin</groupId>
     <artifactId>json-path-maven-plugin</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.4</version>
     <packaging>maven-plugin</packaging>
 
     <properties>
@@ -148,6 +148,6 @@
         <connection>scm:git:git://github.com/org-metalib/json-path-maven-plugin.git</connection>
         <developerConnection>scm:git:https://github.com/org-metalib/json-path-maven-plugin.git</developerConnection>
         <url>https://github.com/org-metalib/json-path-maven-plugin</url>
-        <tag>v0.0.1</tag>
+        <tag>v0.0.4</tag>
     </scm>
 </project>
