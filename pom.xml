@@ -10,7 +10,7 @@
 
     <groupId>org.metalib.maven.plugin</groupId>
     <artifactId>json-path-maven-plugin</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <properties>
