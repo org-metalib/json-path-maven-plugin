@@ -28,7 +28,7 @@ jobs:
           git config --global user.name "${GIT_CONFIG_USER_NAME}"
       - name: install pinentry
         run: |
-          cat ~/.gnupg/gpg.conf
+          /usr/bin/pinentry
           export GPG_TTY=$(tty)
           gpg-connect-agent updatestartuptty /bye >/dev/null
           sudo apt-get install pinentry
